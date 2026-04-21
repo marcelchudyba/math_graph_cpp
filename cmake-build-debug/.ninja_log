@@ -1,0 +1,17 @@
+# ninja log v6
+2	60	7984964830438640	CMakeFiles/math_graph_cpp.dir/CoordinateSystem.cpp.obj.ddi	8cdce3ea4b82e067
+2	130	7984960505203931	CMakeFiles/math_graph_cpp.dir/main.cpp.obj.ddi	39bc90093a51b624
+60	95	7984964831015062	CMakeFiles/math_graph_cpp.dir/CoordinateSystem.cpp.obj.modmap	6876344113a6e8d6
+60	95	7984964831015062	CMakeFiles/math_graph_cpp.dir/CXX.dd	6876344113a6e8d6
+60	95	7984964831015062	C:/Projects/math-graph-cpp/cmake-build-debug/CMakeFiles/math_graph_cpp.dir/CXXModules.json	6876344113a6e8d6
+165	825	7984960506828220	CMakeFiles/math_graph_cpp.dir/main.cpp.obj	b2b4a8c3e9871877
+60	95	7984964831015062	CMakeFiles/math_graph_cpp.dir/main.cpp.obj.modmap	6876344113a6e8d6
+163	925	7984964832045326	math_graph_cpp.exe	b39d89f2aa8ba73e
+97	163	7984964831378068	CMakeFiles/math_graph_cpp.dir/CoordinateSystem.cpp.obj	4d4d712eff9fafa9
+4	51	7984966651393623	CMakeFiles/math_graph_cpp.dir/CoordinateSystem.cpp.obj.ddi	8cdce3ea4b82e067
+52	84	7984966651868480	CMakeFiles/math_graph_cpp.dir/CXX.dd	6876344113a6e8d6
+52	84	7984966651868480	C:/Projects/math-graph-cpp/cmake-build-debug/CMakeFiles/math_graph_cpp.dir/CXXModules.json	6876344113a6e8d6
+52	84	7984966651868480	CMakeFiles/math_graph_cpp.dir/main.cpp.obj.modmap	6876344113a6e8d6
+52	84	7984966651868480	CMakeFiles/math_graph_cpp.dir/CoordinateSystem.cpp.obj.modmap	6876344113a6e8d6
+85	148	7984966652209103	CMakeFiles/math_graph_cpp.dir/CoordinateSystem.cpp.obj	4d4d712eff9fafa9
+148	871	7984966652835418	math_graph_cpp.exe	b39d89f2aa8ba73e

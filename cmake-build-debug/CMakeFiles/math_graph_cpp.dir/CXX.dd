@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles\math_graph_cpp.dir\main.cpp.obj: dyndep
+
+build CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj: dyndep
+

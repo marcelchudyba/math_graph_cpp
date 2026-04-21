@@ -1,0 +1,3 @@
+C:/Projects/math-graph-cpp/cmake-build-debug/CMakeFiles/math_graph_cpp.dir
+C:/Projects/math-graph-cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Projects/math-graph-cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

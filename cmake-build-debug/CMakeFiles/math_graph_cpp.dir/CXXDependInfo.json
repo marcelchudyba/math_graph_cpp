@@ -1,0 +1,21 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Projects/math-graph-cpp/cmake-build-debug",
+	"dir-cur-src" : "C:/Projects/math-graph-cpp",
+	"dir-top-bld" : "C:/Projects/math-graph-cpp/cmake-build-debug",
+	"dir-top-src" : "C:/Projects/math-graph-cpp",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"C:\\Users\\XXX\\.vcpkg-clion\\vcpkg\\installed\\x64-windows\\include"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Projects/math-graph-cpp/cmake-build-debug/CMakeFiles/math_graph_cpp.dir"
+}
