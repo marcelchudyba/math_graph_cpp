@@ -8,12 +8,16 @@ CoordinateSystem::CoordinateSystem(int screen_width, int screen_height, float sc
 
 void CoordinateSystem::DrawStep(int x, int y,int text_x, int text_y, int value, bool direction) {
         if(direction) {
-            DrawLine(x, y - 10, x,y + 10, WHITE);
+            DrawLine(x, y - scale / 4, x,y + scale / 4, WHITE);
         }
         else {
-            DrawLine(x - 10, y, x + 10,y, WHITE);
+            DrawLine(x - scale / 4, y, x + scale / 4,y, WHITE);
         }
-        DrawText(TextFormat("%i", value), x + text_x, y + text_y,20,  WHITE);
+        DrawText(TextFormat("%i", value), x + text_x, y + text_y,scale / 2,  WHITE);
+}
+
+void CoordinateSystem::UpdateScale(int new_value) {
+    scale = new_value;
 }
 
 

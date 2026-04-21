@@ -16,6 +16,7 @@ public:
     void DrawGrid();
     void DrawStep(int x, int y,int text_x, int text_y, int value,bool direction);
     void DrawPoint(Vector2 point);
+    void UpdateScale(int new_value);
     Vector2 GetCenter();
 };
 
