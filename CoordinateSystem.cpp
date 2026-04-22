@@ -3,8 +3,14 @@
 //
 
 #include "CoordinateSystem.h"
+
+#include "Point.h"
+
 CoordinateSystem::CoordinateSystem(int screen_width, int screen_height, float scale,int gridStep) :
-    screen_width(screen_width), screen_height(screen_height), scale(scale),gridStep(gridStep){};
+    screen_width(screen_width), screen_height(screen_height), scale(scale),gridStep(gridStep) {
+    origin.x = screen_width/2;
+    origin.y = screen_height/2;
+};
 
 void CoordinateSystem::DrawStep(int x, int y,int text_x, int text_y, int value, bool direction) {
         if(direction) {
@@ -22,7 +28,6 @@ void CoordinateSystem::UpdateScale(int new_value) {
 
 
 void CoordinateSystem::DrawGrid() {
-
         DrawLine(screen_width / 2, 0, screen_width / 2, screen_height, WHITE);
 
         DrawLine(0, screen_height / 2,screen_width , screen_height / 2, WHITE);
@@ -46,6 +51,44 @@ void CoordinateSystem::DrawGrid() {
             DrawStep(screen_width / 2, i,15, 0, step,false);
             step += gridStep;
          }
+
+}
+
+void CoordinateSystem::GetCenter() {
+    int x = screen_width / 2;
+    int y = screen_height / 2;
+
+
+    origin.x = x;
+    origin.y = y;
+}
+
+void CoordinateSystem::AddPoint(int x, int y) {
+
+    points.push_back(Point(x,y));
+}
+
+void CoordinateSystem::DrawPoint(Point point) {
+    int screen_x = origin.x + (point.GetX() * scale);
+    int screen_y = origin.y - (point.GetY() * scale);
+
+    float radius = scale / 10.0f;
+
+    if (radius < 3.0f) radius = 3.0f;
+
+    DrawCircle(screen_x, screen_y, radius, WHITE);
+}
+void CoordinateSystem::DrawPoints(std::vector<Point> points) {
+    for (Point &point : points) {
+        DrawPoint(point);
+    }
+
+}
+
+
+void CoordinateSystem::DrawCoordinateSystem() {
+    DrawGrid();
+    DrawPoints(points);
 }
 
 

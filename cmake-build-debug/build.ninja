@@ -85,7 +85,25 @@ build CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj: CXX_COMPILER__math
   TARGET_PDB = math_graph_cpp.pdb
   dyndep = CMakeFiles/math_graph_cpp.dir/CXX.dd
 
-build CMakeFiles\math_graph_cpp.dir\CXX.dd | C$:\Projects\math-graph-cpp\cmake-build-debug\CMakeFiles\math_graph_cpp.dir\CXXModules.json CMakeFiles\math_graph_cpp.dir\main.cpp.obj.modmap CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.modmap: CXX_DYNDEP__math_graph_cpp_Debug CMakeFiles\math_graph_cpp.dir\main.cpp.obj.ddi CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.ddi | C$:\Projects\math-graph-cpp\cmake-build-debug\CMakeFiles\math_graph_cpp.dir\CXXDependInfo.json
+build CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi: CXX_SCAN__math_graph_cpp_Debug C$:\Projects\math-graph-cpp\Point.cpp || cmake_object_order_depends_target_math_graph_cpp
+  DEP_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
+  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJ_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi.i
+
+build CMakeFiles\math_graph_cpp.dir\Point.cpp.obj: CXX_COMPILER__math_graph_cpp_scanned_Debug C$:\Projects\math-graph-cpp\Point.cpp | CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.modmap || cmake_object_order_depends_target_math_graph_cpp CMakeFiles\math_graph_cpp.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
+  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  OBJECT_DIR = CMakeFiles\math_graph_cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\math_graph_cpp.dir
+  TARGET_COMPILE_PDB = CMakeFiles\math_graph_cpp.dir\
+  TARGET_PDB = math_graph_cpp.pdb
+  dyndep = CMakeFiles/math_graph_cpp.dir/CXX.dd
+
+build CMakeFiles\math_graph_cpp.dir\CXX.dd | C$:\Projects\math-graph-cpp\cmake-build-debug\CMakeFiles\math_graph_cpp.dir\CXXModules.json CMakeFiles\math_graph_cpp.dir\main.cpp.obj.modmap CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.modmap CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.modmap: CXX_DYNDEP__math_graph_cpp_Debug CMakeFiles\math_graph_cpp.dir\main.cpp.obj.ddi CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.ddi CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi | C$:\Projects\math-graph-cpp\cmake-build-debug\CMakeFiles\math_graph_cpp.dir\CXXDependInfo.json
 
 
 # =============================================================================
@@ -95,7 +113,7 @@ build CMakeFiles\math_graph_cpp.dir\CXX.dd | C$:\Projects\math-graph-cpp\cmake-b
 #############################################
 # Link the executable math_graph_cpp.exe
 
-build math_graph_cpp.exe: CXX_EXECUTABLE_LINKER__math_graph_cpp_Debug CMakeFiles\math_graph_cpp.dir\main.cpp.obj CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj | C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib
+build math_graph_cpp.exe: CXX_EXECUTABLE_LINKER__math_graph_cpp_Debug CMakeFiles\math_graph_cpp.dir\main.cpp.obj CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj CMakeFiles\math_graph_cpp.dir\Point.cpp.obj | C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = C:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib  C:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
