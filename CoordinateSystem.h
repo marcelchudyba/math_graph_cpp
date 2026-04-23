@@ -25,6 +25,7 @@ public:
     void DrawPoints(std::vector<Point> points);
     void UpdateScale(int new_value);
     void GetCenter();
+    Vector2 ConvertXY(int x, int y);
 
 };
 

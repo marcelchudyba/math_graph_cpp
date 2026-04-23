@@ -63,20 +63,28 @@ void CoordinateSystem::GetCenter() {
     origin.y = y;
 }
 
+Vector2 CoordinateSystem::ConvertXY(int x, int y) {
+    int screen_x = origin.x + (x * scale);
+    int screen_y = origin.y - (y * scale);
+
+    return Vector2(screen_x,screen_y);
+}
+
+
 void CoordinateSystem::AddPoint(int x, int y) {
 
     points.push_back(Point(x,y));
 }
 
+
 void CoordinateSystem::DrawPoint(Point point) {
-    int screen_x = origin.x + (point.GetX() * scale);
-    int screen_y = origin.y - (point.GetY() * scale);
+    Vector2 converted_point = ConvertXY(point.GetX(),point.GetY());
 
     float radius = scale / 10.0f;
 
     if (radius < 3.0f) radius = 3.0f;
 
-    DrawCircle(screen_x, screen_y, radius, WHITE);
+    DrawCircle(converted_point.x, converted_point.y, radius, WHITE);
 }
 void CoordinateSystem::DrawPoints(std::vector<Point> points) {
     for (Point &point : points) {
