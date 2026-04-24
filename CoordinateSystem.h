@@ -22,7 +22,7 @@ public:
     void DrawStep(int x, int y,int text_x, int text_y, int value,bool direction);
     void AddPoint(int x, int y);
     void DrawPoint(Point point);
-    void DrawPoints(std::vector<Point> points);
+    void DrawPoints(std::vector<Point>& points);
     void UpdateScale(int new_value);
     void GetCenter();
     Vector2 ConvertXY(int x, int y);
