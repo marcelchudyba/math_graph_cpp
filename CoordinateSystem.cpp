@@ -76,18 +76,17 @@ void CoordinateSystem::DrawGrid() {
         }
 
         int pixelstep = gridStep * scale;
-
-        step = 0;
         for(int i = center_of_grid_x; i < screen_width; i+= pixelstep) {
             DrawStep(i, center_of_grid_y,-3, 15, step,true);
             step += gridStep;
         }
         step = -gridStep;
-        for(int i = center_of_grid_x + pixelstep; i > 0; i-= pixelstep) {
+        for(int i = center_of_grid_x - pixelstep; i > 0; i-= pixelstep) {
             DrawStep(i, center_of_grid_y,-11, 15, step,true);
             step -= gridStep;
         }
-        step = -gridStep;
+
+        step = 0;
         for(int i = center_of_grid_y; i < screen_height; i+= pixelstep) {
             DrawStep(center_of_grid_x, i,-20, -8, step,false);
             step -= gridStep;

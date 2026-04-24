@@ -21,7 +21,7 @@ int main() {
     SetWindowState(FLAG_WINDOW_ALWAYS_RUN);
     float scale = 50.0f;
     const int step = 1;
-    SetTargetFPS(60);
+    SetTargetFPS(144);
 
     CoordinateSystem coordinate_system = CoordinateSystem(screen_width, screen_height, scale,step);
 
