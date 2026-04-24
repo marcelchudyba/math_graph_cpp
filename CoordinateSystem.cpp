@@ -7,21 +7,18 @@
 #include "Point.h"
 
 CoordinateSystem::CoordinateSystem(int screen_width, int screen_height, float scale,int gridStep) :
-    screen_width(screen_width), screen_height(screen_height), scale(scale),gridStep(gridStep) {
+    screen_width(screen_width), screen_height(screen_height), scale(scale),gridStep(gridStep),length_of_step(1) {
     GetCenter();
 };
 
 void CoordinateSystem::DrawStep(int x, int y,int text_x, int text_y, int value, bool direction) {
         //direction == true points at steps on OX
-
         if(direction) {
             if(x != origin.x) DrawLine(x, 0, x,screen_height, GRAY);
             // DrawLine(x, y - scale / 4, x,y + scale / 4, WHITE);
-
         }
         else {
            if(y != origin.y) DrawLine(0, y, screen_width,y, GRAY);
-
             // DrawLine(x - scale / 4, y, x + scale / 4,y, WHITE);
         }
 
@@ -63,22 +60,40 @@ void CoordinateSystem::DrawGrid() {
 
         DrawLine(0, center_of_grid_y,screen_width , center_of_grid_y, RED);
         int step = 0;
-        for(int i = center_of_grid_x; i < screen_width; i+= scale) {
+
+        // if(scale < 40.0f) {
+        //     gridStep = 2;
+        // }
+        // else {
+        //     gridStep = 1;
+        // }
+
+        int min_pixel_spacing = 50;
+        gridStep = min_pixel_spacing / scale;
+
+        if(gridStep < 1) {
+            gridStep = 1;
+        }
+
+        int pixelstep = gridStep * scale;
+
+        step = 0;
+        for(int i = center_of_grid_x; i < screen_width; i+= pixelstep) {
             DrawStep(i, center_of_grid_y,-3, 15, step,true);
             step += gridStep;
         }
-        step = gridStep;
-        for(int i = center_of_grid_x + scale; i > 0; i-= scale) {
+        step = -gridStep;
+        for(int i = center_of_grid_x + pixelstep; i > 0; i-= pixelstep) {
             DrawStep(i, center_of_grid_y,-11, 15, step,true);
             step -= gridStep;
         }
-        step = 0;
-        for(int i = center_of_grid_y; i < screen_height; i+= scale) {
+        step = -gridStep;
+        for(int i = center_of_grid_y; i < screen_height; i+= pixelstep) {
             DrawStep(center_of_grid_x, i,-20, -8, step,false);
             step -= gridStep;
         }
         step = gridStep;
-         for(int i = center_of_grid_y - scale; i > 0; i-= scale) {
+         for(int i = center_of_grid_y - pixelstep; i > 0; i-= pixelstep) {
             DrawStep(center_of_grid_x, i,-20, -8, step,false);
             step += gridStep;
          }
@@ -102,7 +117,6 @@ Vector2 CoordinateSystem::ConvertXY(int x, int y) {
 
 
 void CoordinateSystem::AddPoint(int x, int y) {
-
     points.push_back(Point(x,y));
 }
 
@@ -116,16 +130,18 @@ void CoordinateSystem::DrawPoint(Point point) {
 
     DrawCircle(converted_point.x, converted_point.y, radius, WHITE);
 }
-void CoordinateSystem::DrawPoints(std::vector<Point>& points) {
-    for (Point &point : points) {
-        DrawPoint(point);
+void CoordinateSystem::DrawPoints() {
+    if(!this->points.empty()) {
+        for (Point &point : this->points) {
+            DrawPoint(point);
+        }
     }
 }
 
 
 void CoordinateSystem::DrawCoordinateSystem() {
     DrawGrid();
-    DrawPoints(points);
+    DrawPoints();
 }
 
 

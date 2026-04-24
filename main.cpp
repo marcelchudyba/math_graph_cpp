@@ -19,7 +19,7 @@ int main() {
     const int screen_height = 800;
     InitWindow(screen_width, screen_height, "Math Graph");
     SetWindowState(FLAG_WINDOW_ALWAYS_RUN);
-     float scale = 20.0f;
+    float scale = 50.0f;
     const int step = 1;
     SetTargetFPS(60);
 
@@ -29,19 +29,19 @@ int main() {
     // coordinate_system.DrawGrid();
 
     // I ćwiartka (prawo, góra)
-    coordinate_system.AddPoint(5, 5);
-
-    // II ćwiartka (lewo, góra)
-    coordinate_system.AddPoint(-5, 5);
-
-    // III ćwiartka (lewo, dół)
-    coordinate_system.AddPoint(-5, -5);
-
-    // IV ćwiartka (prawo, dół)
-    coordinate_system.AddPoint(5, -5);
-
-    // Początek układu współrzędnych
-    coordinate_system.AddPoint(0, 0);
+    // coordinate_system.AddPoint(5, 5);
+    //
+    // // II ćwiartka (lewo, góra)
+    // coordinate_system.AddPoint(-5, 5);
+    //
+    // // III ćwiartka (lewo, dół)
+    // coordinate_system.AddPoint(-5, -5);
+    //
+    // // IV ćwiartka (prawo, dół)
+    // coordinate_system.AddPoint(5, -5);
+    //
+    // // Początek układu współrzędnych
+    // coordinate_system.AddPoint(0, 0);
 
     char x[64] = "";
     char y[64] = "";
@@ -52,20 +52,16 @@ int main() {
     float left_distance = 0.0f;
     float right_distance = 0.0f;
 
+    float length_of_step = 1;
 
-
-    TraceLog(LOG_INFO, "Aktualna X to: %i", coordinate_system.points[0].GetX());
-    TraceLog(LOG_INFO, "Aktualna Y to: %i", coordinate_system.points[0].GetY());
+;
     bool showMessageBox = false;
     while(WindowShouldClose() == false) {
 
         BeginDrawing();
 
         ClearBackground(RAYWHITE);
-        // if(IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-        //     left_distance = 0.0f;
-        //     right_distance = 0.0f;
-        // }
+
 
 
         // Sprawdzanie, czy lewy przycisk myszy jest TRZYMANY
@@ -86,11 +82,14 @@ int main() {
         float wheelMove = GetMouseWheelMove();
         if (wheelMove != 0.0f) {
 
-            scale += wheelMove * 5;
-            if (scale < 5) {
-                scale = 5;
+            float zoomFactor = 0.1f;
+            scale += scale * wheelMove * zoomFactor;
+            if (scale < 5.0f) {
+                scale = 5.0f;
             }
             coordinate_system.UpdateScale(scale);
+            TraceLog(LOG_INFO, "Wartosc scale: %0.0f", scale);
+
         }
 
 
