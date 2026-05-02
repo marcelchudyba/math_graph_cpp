@@ -1,0 +1,3 @@
+[submodule "libs/StoneMath"]
+	path = libs/StoneMath
+	url = https://github.com/marcelchudyba/stone-math-cpp.git

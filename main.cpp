@@ -4,16 +4,9 @@
 
 #define RAYGUI_IMPLEMENTATION
 #include <raygui.h>
-
 #include "CoordinateSystem.h"
 
-
-
-
-
 int main() {
-
-
 
     const int screen_width = 1280;
     const int screen_height = 800;
@@ -54,7 +47,6 @@ int main() {
 
     float length_of_step = 1;
 
-;
     bool showMessageBox = false;
     while(WindowShouldClose() == false) {
 

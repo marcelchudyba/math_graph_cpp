@@ -208,6 +208,15 @@ PKG_CONFIG_ARGN:STRING=
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=C:/msys64/mingw64/bin/pkg-config.exe
 
+//Value Computed by CMake
+StoneMath_BINARY_DIR:STATIC=C:/Projects/math-graph-cpp/cmake-build-debug/libs/StoneMath
+
+//Value Computed by CMake
+StoneMath_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+StoneMath_SOURCE_DIR:STATIC=C:/Projects/math-graph-cpp/libs/StoneMath
+
 //Automatically copy dependencies into the output directory for
 // executables.
 VCPKG_APPLOCAL_DEPS:BOOL=ON
@@ -372,7 +381,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //noop for ranlib

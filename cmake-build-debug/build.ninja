@@ -47,20 +47,20 @@ cmake_ninja_workdir = C$:\Projects\math-graph-cpp\cmake-build-debug\
 #############################################
 # Order-only phony target for math_graph_cpp
 
-build cmake_object_order_depends_target_math_graph_cpp: phony || .
+build cmake_object_order_depends_target_math_graph_cpp: phony || cmake_object_order_depends_target_StoneMath
 
 build CMakeFiles\math_graph_cpp.dir\main.cpp.obj.ddi: CXX_SCAN__math_graph_cpp_Debug C$:\Projects\math-graph-cpp\main.cpp || cmake_object_order_depends_target_math_graph_cpp
   DEP_FILE = CMakeFiles\math_graph_cpp.dir\main.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\math_graph_cpp.dir\main.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
-  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
   OBJ_FILE = CMakeFiles\math_graph_cpp.dir\main.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\math_graph_cpp.dir\main.cpp.obj.ddi.i
 
 build CMakeFiles\math_graph_cpp.dir\main.cpp.obj: CXX_COMPILER__math_graph_cpp_scanned_Debug C$:\Projects\math-graph-cpp\main.cpp | CMakeFiles\math_graph_cpp.dir\main.cpp.obj.modmap || cmake_object_order_depends_target_math_graph_cpp CMakeFiles\math_graph_cpp.dir\CXX.dd
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\math_graph_cpp.dir\main.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
-  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
   OBJECT_DIR = CMakeFiles\math_graph_cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\math_graph_cpp.dir
   TARGET_COMPILE_PDB = CMakeFiles\math_graph_cpp.dir\
@@ -71,14 +71,14 @@ build CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.ddi: CXX_SCAN__math
   DEP_FILE = CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
-  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
   OBJ_FILE = CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.ddi.i
 
 build CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj: CXX_COMPILER__math_graph_cpp_scanned_Debug C$:\Projects\math-graph-cpp\CoordinateSystem.cpp | CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.modmap || cmake_object_order_depends_target_math_graph_cpp CMakeFiles\math_graph_cpp.dir\CXX.dd
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
-  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
   OBJECT_DIR = CMakeFiles\math_graph_cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\math_graph_cpp.dir
   TARGET_COMPILE_PDB = CMakeFiles\math_graph_cpp.dir\
@@ -89,14 +89,14 @@ build CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi: CXX_SCAN__math_graph_cpp_
   DEP_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi.d
   DYNDEP_INTERMEDIATE_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
-  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
   OBJ_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj
   PREPROCESSED_OUTPUT_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.ddi.i
 
 build CMakeFiles\math_graph_cpp.dir\Point.cpp.obj: CXX_COMPILER__math_graph_cpp_scanned_Debug C$:\Projects\math-graph-cpp\Point.cpp | CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.modmap || cmake_object_order_depends_target_math_graph_cpp CMakeFiles\math_graph_cpp.dir\CXX.dd
   DYNDEP_MODULE_MAP_FILE = CMakeFiles\math_graph_cpp.dir\Point.cpp.obj.modmap
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi -IC:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/../include
-  INCLUDES = -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include -external:IC:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\include -external:W0
   OBJECT_DIR = CMakeFiles\math_graph_cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\math_graph_cpp.dir
   TARGET_COMPILE_PDB = CMakeFiles\math_graph_cpp.dir\
@@ -113,10 +113,10 @@ build CMakeFiles\math_graph_cpp.dir\CXX.dd | C$:\Projects\math-graph-cpp\cmake-b
 #############################################
 # Link the executable math_graph_cpp.exe
 
-build math_graph_cpp.exe: CXX_EXECUTABLE_LINKER__math_graph_cpp_Debug CMakeFiles\math_graph_cpp.dir\main.cpp.obj CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj CMakeFiles\math_graph_cpp.dir\Point.cpp.obj | C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib
+build math_graph_cpp.exe: CXX_EXECUTABLE_LINKER__math_graph_cpp_Debug CMakeFiles\math_graph_cpp.dir\main.cpp.obj CMakeFiles\math_graph_cpp.dir\CoordinateSystem.cpp.obj CMakeFiles\math_graph_cpp.dir\Point.cpp.obj | C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib libs\StoneMath\StoneMath.lib C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib || libs\StoneMath\StoneMath.lib
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = C:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib  C:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_LIBRARIES = C:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib  libs\StoneMath\StoneMath.lib  C:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\debug\lib\raylib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
   OBJECT_DIR = CMakeFiles\math_graph_cpp.dir
   POST_BUILD = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Projects\math-graph-cpp\cmake-build-debug && C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/XXX/.vcpkg-clion/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary C:/Projects/math-graph-cpp/cmake-build-debug/math_graph_cpp.exe -installedDir C:/Users/XXX/.vcpkg-clion/vcpkg/installed/x64-windows/debug/bin -OutVariable out"
   PRE_LINK = cd .
@@ -149,7 +149,140 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Projects/math-graph-cpp/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target StoneMath
+
+
+#############################################
+# Order-only phony target for StoneMath
+
+build cmake_object_order_depends_target_StoneMath: phony || .
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.ddi: CXX_SCAN__StoneMath_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\Lexer.cpp || cmake_object_order_depends_target_StoneMath
+  DEP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJ_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.ddi.i
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj: CXX_COMPILER__StoneMath_scanned_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\Lexer.cpp | libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.modmap || cmake_object_order_depends_target_StoneMath libs\StoneMath\CMakeFiles\StoneMath.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJECT_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir
+  OBJECT_FILE_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir\src
+  TARGET_COMPILE_PDB = libs\StoneMath\CMakeFiles\StoneMath.dir\StoneMath.pdb
+  TARGET_PDB = libs\StoneMath\StoneMath.pdb
+  dyndep = libs/StoneMath/CMakeFiles/StoneMath.dir/CXX.dd
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.ddi: CXX_SCAN__StoneMath_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\Parser.cpp || cmake_object_order_depends_target_StoneMath
+  DEP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJ_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.ddi.i
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj: CXX_COMPILER__StoneMath_scanned_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\Parser.cpp | libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.modmap || cmake_object_order_depends_target_StoneMath libs\StoneMath\CMakeFiles\StoneMath.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJECT_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir
+  OBJECT_FILE_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir\src
+  TARGET_COMPILE_PDB = libs\StoneMath\CMakeFiles\StoneMath.dir\StoneMath.pdb
+  TARGET_PDB = libs\StoneMath\StoneMath.pdb
+  dyndep = libs/StoneMath/CMakeFiles/StoneMath.dir/CXX.dd
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.ddi: CXX_SCAN__StoneMath_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\Evaluator.cpp || cmake_object_order_depends_target_StoneMath
+  DEP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJ_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.ddi.i
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj: CXX_COMPILER__StoneMath_scanned_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\Evaluator.cpp | libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.modmap || cmake_object_order_depends_target_StoneMath libs\StoneMath\CMakeFiles\StoneMath.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJECT_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir
+  OBJECT_FILE_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir\src
+  TARGET_COMPILE_PDB = libs\StoneMath\CMakeFiles\StoneMath.dir\StoneMath.pdb
+  TARGET_PDB = libs\StoneMath\StoneMath.pdb
+  dyndep = libs/StoneMath/CMakeFiles/StoneMath.dir/CXX.dd
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.ddi: CXX_SCAN__StoneMath_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\StoneMath.cpp || cmake_object_order_depends_target_StoneMath
+  DEP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.ddi.d
+  DYNDEP_INTERMEDIATE_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.ddi
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJ_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj
+  PREPROCESSED_OUTPUT_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.ddi.i
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj: CXX_COMPILER__StoneMath_scanned_Debug C$:\Projects\math-graph-cpp\libs\StoneMath\src\StoneMath.cpp | libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.modmap || cmake_object_order_depends_target_StoneMath libs\StoneMath\CMakeFiles\StoneMath.dir\CXX.dd
+  DYNDEP_MODULE_MAP_FILE = libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.modmap
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++20 -MDd -Zi
+  INCLUDES = -IC:\Projects\math-graph-cpp\libs\StoneMath\include
+  OBJECT_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir
+  OBJECT_FILE_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir\src
+  TARGET_COMPILE_PDB = libs\StoneMath\CMakeFiles\StoneMath.dir\StoneMath.pdb
+  TARGET_PDB = libs\StoneMath\StoneMath.pdb
+  dyndep = libs/StoneMath/CMakeFiles/StoneMath.dir/CXX.dd
+
+build libs\StoneMath\CMakeFiles\StoneMath.dir\CXX.dd | C$:\Projects\math-graph-cpp\cmake-build-debug\libs\StoneMath\CMakeFiles\StoneMath.dir\CXXModules.json libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.modmap libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.modmap libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.modmap libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.modmap: CXX_DYNDEP__StoneMath_Debug libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj.ddi libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj.ddi libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj.ddi libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj.ddi | C$:\Projects\math-graph-cpp\cmake-build-debug\libs\StoneMath\CMakeFiles\StoneMath.dir\CXXDependInfo.json
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target StoneMath
+
+
+#############################################
+# Link the static library libs\StoneMath\StoneMath.lib
+
+build libs\StoneMath\StoneMath.lib: CXX_STATIC_LIBRARY_LINKER__StoneMath_Debug libs\StoneMath\CMakeFiles\StoneMath.dir\src\Lexer.cpp.obj libs\StoneMath\CMakeFiles\StoneMath.dir\src\Parser.cpp.obj libs\StoneMath\CMakeFiles\StoneMath.dir\src\Evaluator.cpp.obj libs\StoneMath\CMakeFiles\StoneMath.dir\src\StoneMath.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64
+  OBJECT_DIR = libs\StoneMath\CMakeFiles\StoneMath.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = libs\StoneMath\CMakeFiles\StoneMath.dir\StoneMath.pdb
+  TARGET_FILE = libs\StoneMath\StoneMath.lib
+  TARGET_PDB = libs\StoneMath\StoneMath.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs\StoneMath\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Projects\math-graph-cpp\cmake-build-debug\libs\StoneMath && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs\StoneMath\edit_cache: phony libs\StoneMath\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs\StoneMath\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Projects\math-graph-cpp\cmake-build-debug\libs\StoneMath && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Projects\math-graph-cpp -BC:\Projects\math-graph-cpp\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs\StoneMath\rebuild_cache: phony libs\StoneMath\CMakeFiles\rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build StoneMath: phony libs\StoneMath\StoneMath.lib
+
+build StoneMath.lib: phony libs\StoneMath\StoneMath.lib
 
 build math_graph_cpp: phony math_graph_cpp.exe
 
@@ -161,7 +294,14 @@ build math_graph_cpp: phony math_graph_cpp.exe
 #############################################
 # Folder: C:/Projects/math-graph-cpp/cmake-build-debug
 
-build all: phony math_graph_cpp.exe
+build all: phony math_graph_cpp.exe libs\StoneMath\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Projects/math-graph-cpp/cmake-build-debug/libs/StoneMath
+
+build libs\StoneMath\all: phony libs\StoneMath\StoneMath.lib
 
 # =============================================================================
 # Built-in targets
@@ -170,14 +310,14 @@ build all: phony math_graph_cpp.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Projects\math-graph-cpp\CMakeLists.txt C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config-version.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Projects\math-graph-cpp\CMakeLists.txt C$:\Projects\math-graph-cpp\libs\StoneMath\CMakeLists.txt C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config-version.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Projects\math-graph-cpp\CMakeLists.txt C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config-version.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake: phony
+build C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeDependentOption.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeRCInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Compiler\MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPackageMessage.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\FindPkgConfig.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\Windows.cmake C$:\Program$ Files\JetBrains\CLion$ 2024.2.2\bin\cmake\win\x64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake C$:\Projects\math-graph-cpp\CMakeLists.txt C$:\Projects\math-graph-cpp\libs\StoneMath\CMakeLists.txt C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config-version.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\installed\x64-windows\share\raylib\raylib-config.cmake C$:\Users\XXX\.vcpkg-clion\vcpkg\scripts\buildsystems\vcpkg.cmake CMakeCache.txt CMakeFiles\3.29.6\CMakeCCompiler.cmake CMakeFiles\3.29.6\CMakeCXXCompiler.cmake CMakeFiles\3.29.6\CMakeRCCompiler.cmake CMakeFiles\3.29.6\CMakeSystem.cmake: phony
 
 
 #############################################
