@@ -4,6 +4,8 @@
 
 #define RAYGUI_IMPLEMENTATION
 #include <raygui.h>
+#include <StoneMath.h>
+
 #include "CoordinateSystem.h"
 
 int main() {
@@ -17,7 +19,6 @@ int main() {
     SetTargetFPS(144);
 
     CoordinateSystem coordinate_system = CoordinateSystem(screen_width, screen_height, scale,step);
-
 
     // coordinate_system.DrawGrid();
 
@@ -36,7 +37,7 @@ int main() {
     // // Początek układu współrzędnych
     // coordinate_system.AddPoint(0, 0);
 
-    char x[64] = "";
+    char equation[64] = "";
     char y[64] = "";
 
     bool editMode = false;
@@ -48,6 +49,7 @@ int main() {
     float length_of_step = 1;
 
     bool showMessageBox = false;
+    coordinate_system.UpdateScale(scale);
     while(WindowShouldClose() == false) {
 
         BeginDrawing();
@@ -84,22 +86,20 @@ int main() {
 
         }
 
-
-
         coordinate_system.DrawCoordinateSystem();
-
 
         //Gui
         DrawText(TextFormat("x: %.0f y: %.0f", coordinate_system.origin.x ,coordinate_system.origin.y), 10, 50, 20, WHITE);
-        if (GuiTextBox(Rectangle{ 10, 80, 150, 30 }, x, 64, editMode)) {
+        if (GuiTextBox(Rectangle{ 10, 80, 150, 30 }, equation, 64, editMode)) {
             editMode = !editMode;
+            // coordinate_system.DrawFunction(equation);
         }
-        if (GuiTextBox(Rectangle{ 10, 130, 150, 30 }, y, 64, editMode2)) {
-            editMode2 = !editMode2;
-        }
+        // if (GuiTextBox(Rectangle{ 10, 130, 150, 30 }, y, 64, editMode2)) {
+        //     editMode2 = !editMode2;
+        // }
         if (GuiButton(Rectangle{ 170, 80, 100, 30 }, "Narysuj")) {
-            TraceLog(LOG_INFO, "Przycisk zostal klikniety! Zawartosc inputa to: %s", x);
-            coordinate_system.AddPoint(std::stoi(x), std::stoi(y));
+            // TraceLog(LOG_INFO, "Przycisk zostal klikniety! Zawartosc inputa to: %s", x);
+            coordinate_system.DrawFunction(equation);
         }
 
         EndDrawing();

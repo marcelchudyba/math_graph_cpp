@@ -13,6 +13,7 @@
 	"forward-modules-from-target-dirs" : [],
 	"include-dirs" : 
 	[
+		"C:\\Projects\\math-graph-cpp\\libs\\StoneMath\\include",
 		"C:\\Users\\XXX\\.vcpkg-clion\\vcpkg\\installed\\x64-windows\\include"
 	],
 	"language" : "CXX",

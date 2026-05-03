@@ -48,6 +48,15 @@ void CoordinateSystem::DrawStep(int x, int y,int text_x, int text_y, int value, 
 
 void CoordinateSystem::UpdateScale(int new_value) {
     scale = new_value;
+
+    int min_pixel_spacing = 50;
+    gridStep = min_pixel_spacing / scale;
+
+    if(gridStep < 1) {
+        gridStep = 1;
+    }
+
+    pixel_step = gridStep * scale;
 }
 
 
@@ -61,38 +70,25 @@ void CoordinateSystem::DrawGrid() {
         DrawLine(0, center_of_grid_y,screen_width , center_of_grid_y, RED);
         int step = 0;
 
-        // if(scale < 40.0f) {
-        //     gridStep = 2;
-        // }
-        // else {
-        //     gridStep = 1;
-        // }
 
-        int min_pixel_spacing = 50;
-        gridStep = min_pixel_spacing / scale;
 
-        if(gridStep < 1) {
-            gridStep = 1;
-        }
-
-        int pixelstep = gridStep * scale;
-        for(int i = center_of_grid_x; i < screen_width; i+= pixelstep) {
+        for(int i = center_of_grid_x; i < screen_width; i+= pixel_step) {
             DrawStep(i, center_of_grid_y,-3, 15, step,true);
             step += gridStep;
         }
         step = -gridStep;
-        for(int i = center_of_grid_x - pixelstep; i > 0; i-= pixelstep) {
+        for(int i = center_of_grid_x - pixel_step; i > 0; i-= pixel_step) {
             DrawStep(i, center_of_grid_y,-11, 15, step,true);
             step -= gridStep;
         }
 
         step = 0;
-        for(int i = center_of_grid_y; i < screen_height; i+= pixelstep) {
+        for(int i = center_of_grid_y; i < screen_height; i+= pixel_step) {
             DrawStep(center_of_grid_x, i,-20, -8, step,false);
             step -= gridStep;
         }
         step = gridStep;
-         for(int i = center_of_grid_y - pixelstep; i > 0; i-= pixelstep) {
+         for(int i = center_of_grid_y - pixel_step; i > 0; i-= pixel_step) {
             DrawStep(center_of_grid_x, i,-20, -8, step,false);
             step += gridStep;
          }
@@ -122,9 +118,7 @@ void CoordinateSystem::AddPoint(int x, int y) {
 
 void CoordinateSystem::DrawPoint(Point point) {
     Vector2 converted_point = ConvertXY(point.GetX(),point.GetY());
-
     float radius = scale / 10.0f;
-
     if (radius < 3.0f) radius = 3.0f;
 
     DrawCircle(converted_point.x, converted_point.y, radius, WHITE);
@@ -142,5 +136,34 @@ void CoordinateSystem::DrawCoordinateSystem() {
     DrawGrid();
     DrawPoints();
 }
+
+std::string CoordinateSystem::CutPrefix(const std::string &expr) {
+    std::string ready_expr = expr;
+
+    size_t pos = expr.find('=');
+
+    if (pos != std::string::npos) {
+        ready_expr.erase(0, pos + 1); // Usuwa wszystko od indeksu 0 do znaku '='
+    }
+    return ready_expr;
+}
+
+
+void CoordinateSystem::DrawFunction(const std::string &expr) {
+    std::string ready_expr = CutPrefix(expr);
+    StoneMath::StoneMath eval = StoneMath::StoneMath(ready_expr);
+
+
+//         try {
+//     for(double i = 0; i < screen_width; i+=) {
+//             double starting_y = eval.Evaluate(i);
+//             double ending_y = eval.Evaluate(i + 1);
+//             DrawLine(i, starting_y, i+1, ending_y, RED);
+//     }
+//         }catch(std::exception &e) {
+//             TraceLog(LOG_INFO, "Error: %s", e.what());
+//         }
+}
+
 
 

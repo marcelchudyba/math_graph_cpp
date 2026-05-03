@@ -1,10 +1,8 @@
-//
-// Created by XXX on 21.04.2026.
-//
-
 #ifndef COORDINATESYSTEM_H
 #define COORDINATESYSTEM_H
 #include <raylib.h>
+#include <StoneMath.h>
+#include <string>
 #include <vector>
 
 #include "Point.h"
@@ -17,6 +15,7 @@ public:
     int screen_width,screen_height,gridStep;
     float scale;
     float length_of_step;
+    int pixel_step;
     CoordinateSystem(int screen_width, int screen_height,float scale,int gridStep);
     void DrawGrid();
     void DrawCoordinateSystem();
@@ -26,6 +25,9 @@ public:
     void DrawPoints();
     void UpdateScale(int new_value);
     void GetCenter();
+    void ChangePixelStep();
+    std::string CutPrefix(const std::string& expr);
+    void DrawFunction(const std::string& expr);
     Vector2 ConvertXY(int x, int y);
 
 };
